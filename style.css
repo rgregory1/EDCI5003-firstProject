@@ -17,11 +17,19 @@ body {
 }
 
 /* Header styling */
-.header h1 {
+header {
   color: #3367d6;
-  text-align: center;
+  /* text-align: center; */
   background-color: #95aad7;
   padding: 20px;
+  align-items: center;
+}
+header {
+    display: flex;
+}
+header img {
+    margin-left: 20px;
+    height: 50px;
 }
 
 /* Flex layout for content sections */
@@ -67,3 +75,11 @@ pre {
     flex: 1 1 100%;
   }
 }
+
+.video-container {
+    
+      padding: auto;
+     
+      background-color: #f9f9f9;
+    }
+
