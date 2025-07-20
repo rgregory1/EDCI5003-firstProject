@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Apps Script Intro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>What is Google Apps Script?</h1>
+    </header>
+
+    <main class="content">
+      <section class="intro">
+        <p>
+          Google Apps Script is a cloud-based scripting language developed by Google that enables users to automate and extend Google Workspace applications like Docs, Sheets, Slides, Gmail, and Drive. Based on JavaScript, it provides a powerful yet accessible way to create custom functions, automate repetitive tasks, build simple web apps, and integrate with external APIs — all within the familiar Google ecosystem. Because it's cloud-based, there's no need to install anything — everything runs on Google’s servers and is accessible through a browser.
+            </p>
+        <p>One of the most compelling features of Google Apps Script is its deep integration with Google services. For example, you can write a script that automatically sends personalized emails from Gmail using data from a Google Sheet, or create a Google Form that updates a document based on user responses. The script editor is built directly into Google Sheets, Docs, and other Workspace apps, making it easy to get started without needing any additional tools or setup. It also includes triggers that let scripts run on events like form submissions or time-based schedules.
+         </p>   
+        <p>Google Apps Script is widely used in education, business, and personal productivity contexts. Teachers and administrators might use it to generate reports, send reminders, or manage student data; businesses often use it for workflow automation, approval processes, or custom dashboards. Because it uses JavaScript syntax, it’s approachable for both beginners and experienced developers, and its ability to scale from simple macros to complex web apps makes it a versatile tool for nearly any task in the Google Workspace environment.
+        </p>
+      </section>
+
+      <section class="example">
+        <h2>Simple Example</h2>
+        <pre><code>
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  // Or DocumentApp, SlidesApp or FormApp.
+  ui.createMenu('Custom Menu')
+      .addItem('First item', 'menuItem1')
+      .addSeparator()
+      .addSubMenu(ui.createMenu('Sub-menu')
+          .addItem('Second item', 'menuItem2'))
+      .addToUi();
+}
+        </code></pre>
+        <p>
+          This Google Apps Script code defines a function called onOpen() that runs automatically when a Google Sheet is opened. It creates a custom menu in the Sheets user interface (UI). 
+          </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Your Name</p>
+    </footer>
+  </div>
+</body>
+</html>
+
